@@ -1,0 +1,9 @@
+import pickle
+
+# Save model
+with open("fake_job_model.pkl", "wb") as f:
+    pickle.dump(model, f)
+
+# Save TF-IDF
+with open("tfidf_vectorizer.pkl", "wb") as f:
+    pickle.dump(tfidf, f)
